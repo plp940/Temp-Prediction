@@ -8,7 +8,7 @@ import pickle
 
 # Load model and scaler
 model = keras.models.load_model("temperature.h5", compile=False)   # Must be a Keras model (.h5)
-scaler = joblib.load("Scaler.pkl")                  # MinMaxScaler saved using joblib
+scaler = joblib.load("scaler.pkl")                  # MinMaxScaler saved using joblib
 
 # Streamlit UI setup
 st.set_page_config(page_title="Temperature Prediction App", page_icon="🌡️", layout="wide")
