@@ -4,6 +4,7 @@ import tensorflow as tf
 from tensorflow import keras
 import streamlit as st
 import joblib
+import pickle
 
 # Load model and scaler
 model = keras.models.load_model("temperature.h5", compile=False)   # Must be a Keras model (.h5)
